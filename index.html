@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Creeper · Luxury Nature Resort · Official Site</title>
+  <meta name="description" content="Golden Creeper — a luxury nature resort where the forest, the light and the art of hospitality grow together.">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="is-intro">
+
+  <!-- ============ INTRO / LANDING SCREEN ============ -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__bg"></div>
+    <div class="intro__stage">
+      <div class="intro__logo" id="introLogo">
+        <div class="intro__logo-inner">
+          <img class="intro__logo-color" src="img/logo.png" alt="">
+          <img class="intro__logo-knockout" src="img/logo-knockout.png" alt="">
+        </div>
+      </div>
+      <svg class="intro__ornament" viewBox="0 0 240 48" fill="none">
+        <path class="vine" pathLength="1" d="M4 30 C 40 6, 70 44, 112 24 S 186 4, 236 26"/>
+        <g class="leaf leaf--1"><path d="M70 22 c -10 -14 -2 -22 4 -22 c 4 8 4 16 -4 22 z"/><path d="M70 22 c 2 -12 14 -14 18 -10 c -4 8 -10 12 -18 10 z"/></g>
+        <g class="leaf leaf--2"><path d="M168 16 c -8 -12 0 -18 5 -18 c 3 6 3 13 -5 18 z"/><path d="M168 16 c 2 -10 12 -11 15 -8 c -3 6 -8 10 -15 8 z"/></g>
+      </svg>
+    </div>
+    <button class="intro__skip" type="button">Skip intro</button>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <button class="header__menu" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="burger"><i></i><i></i><i></i></span><span class="header__label">Menu</span>
+    </button>
+    <a class="header__brand" href="#top" aria-label="Golden Creeper home">
+      <img class="header__wordmark header__wordmark--light" src="img/wordmark.png" alt="Golden Creeper">
+      <img class="header__wordmark header__wordmark--dark" src="img/wordmark-green.png" alt="">
+    </a>
+    <nav class="header__right">
+      <a href="#" class="header__link hide-sm">Languages</a>
+      <a href="#offers" class="header__link hide-sm">Offers</a>
+      <a href="#book" class="btn btn--line">Book</a>
+    </nav>
+  </header>
+
+  <!-- ============ FULL-SCREEN MENU ============ -->
+  <div class="menu" id="menu">
+    <div class="menu__inner">
+      <ul class="menu__list">
+        <li><a href="#rooms">Rooms &amp; Villas</a></li>
+        <li><a href="#dining">Dining</a></li>
+        <li><a href="#spa">Spa &amp; Wellbeing</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#offers">Special Offers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu__media"><img src="img/forest.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__media"><img src="img/hero.jpg" alt="Golden Creeper resort pool surrounded by tropical forest"></div>
+      <div class="hero__shade"></div>
+      <div class="hero__content">
+        <img class="hero__mark" id="heroMark" src="img/logo-knockout.png" alt="Golden Creeper">
+        <h1 class="hero__title"><em>Welcome</em> to where the forest turns to gold</h1>
+      </div>
+      <aside class="hero__card" id="offers">
+        <button class="hero__card-close" type="button" aria-label="Close">&times;</button>
+        <p class="kicker">Season of Blossoms</p>
+        <h3>Golden Creeper in full bloom</h3>
+        <p>As the monsoon softens, the gardens awaken. Enjoy a third night on us, a candle-lit dinner under the canopy and a signature spa ritual.</p>
+        <a href="#book" class="link">Discover the offer</a>
+      </aside>
+      <a href="#discover" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ INTRO TEXT ============ -->
+    <section class="section section--ivory" id="discover">
+      <div class="container narrow center">
+        <p class="kicker reveal">Luxury nature resort</p>
+        <h2 class="display reveal">True to its roots, <em>Golden Creeper</em> is a sanctuary where nature and elegance grow together.</h2>
+      </div>
+      <div class="container split split--text-left">
+        <div class="split__text reveal">
+          <h3 class="subhead"><em>Golden Creeper, a living journey</em></h3>
+          <p>From the moment you arrive, you are welcomed by the hush of the forest and the scent of jasmine on warm air. Winding paths lead you through gardens where golden vines climb towards the light.</p>
+          <p>Wherever you look, nature is the architect: carved timber, hand-laid stone, open terraces and water that mirrors the sky. Every detail invites you to slow down and simply be.</p>
+          <a href="#rooms" class="link">Explore the resort</a>
+        </div>
+        <div class="split__media reveal">
+          <div class="slider" data-slider>
+            <div class="slider__track">
+              <div class="slide"><img src="img/forest.jpg" alt=""></div>
+              <div class="slide"><img src="img/hills.jpg" alt=""></div>
+              <div class="slide"><img src="img/deck.jpg" alt=""></div>
+            </div>
+            <button class="slider__btn slider__btn--prev" aria-label="Previous"></button>
+            <button class="slider__btn slider__btn--next" aria-label="Next"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ROOMS ============ -->
+    <section class="section section--white" id="rooms">
+      <div class="container center narrow">
+        <span class="ornament reveal"></span>
+        <h2 class="title reveal">Rooms &amp; Villas<br><em>a nest among the trees</em></h2>
+      </div>
+      <div class="rooms" data-slider>
+        <div class="slider__track rooms__track">
+          <article class="room"><div class="room__img"><img src="img/room-1.jpg" alt=""></div><h3>Canopy Room</h3><p>Warm timber, soft linen and a private balcony opening onto the treetops.</p><a href="#book" class="link">Discover</a></article>
+          <article class="room"><div class="room__img"><img src="img/room-2.jpg" alt=""></div><h3>Garden Suite</h3><p>A generous suite with a lounge and terrace overlooking the blossoming gardens.</p><a href="#book" class="link">Discover</a></article>
+          <article class="room"><div class="room__img"><img src="img/room-4.jpg" alt=""></div><h3>Sky Ridge Retreat</h3><p>Wake to mist rolling over the valley from your open-air deck.</p><a href="#book" class="link">Discover</a></article>
+          <article class="room"><div class="room__img"><img src="img/room-3.jpg" alt=""></div><h3>Creeper Pool Villa</h3><p>Your own pool, outdoor shower and a pavilion wrapped in golden vines.</p><a href="#book" class="link">Discover</a></article>
+        </div>
+        <div class="rooms__nav">
+          <button class="slider__btn slider__btn--prev" aria-label="Previous"></button>
+          <button class="slider__btn slider__btn--next" aria-label="Next"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOK BAND ============ -->
+    <section class="book" id="book">
+      <div class="book__media"><img src="img/pool-night.jpg" alt=""></div>
+      <div class="book__panel reveal">
+        <h2 class="title title--light">Book your stay</h2>
+        <form class="book__form" onsubmit="return false">
+          <label>Arrival<input type="date"></label>
+          <label>Departure<input type="date"></label>
+          <label>Guests<select><option>2 adults</option><option>1 adult</option><option>2 adults, 1 child</option><option>Family</option></select></label>
+          <button class="btn btn--gold" type="submit">Check availability</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section section--ivory">
+      <div class="container split">
+        <div class="split__media split__media--tall reveal"><img src="img/cabana.jpg" alt=""></div>
+        <div class="split__text reveal">
+          <span class="ornament"></span>
+          <h2 class="title">To return to Golden Creeper<br><em>time and time again</em></h2>
+          <p>Our hospitality is rooted in care. Every member of our family remembers your name, your favourite tea and the corner of the garden you love most.</p>
+          <p>It is this quiet attention, season after season, that turns a first visit into a lifelong ritual.</p>
+          <a href="#book" class="link">Book a stay</a>
+        </div>
+      </div>
+      <div class="container split split--text-left">
+        <div class="split__text reveal">
+          <span class="ornament"></span>
+          <h2 class="title">What makes Golden Creeper<br><em>so unique in their eyes?</em></h2>
+          <p>An art of living inherited from the land itself. Mornings begin with birdsong and fresh fruit from our orchards; evenings end with lantern light reflected in still water.</p>
+          <p>Everything here grows slowly, beautifully and with intention, just like the golden creeper that gives us our name.</p>
+        </div>
+        <div class="split__media reveal"><img src="img/pool-deck.jpg" alt=""></div>
+      </div>
+    </section>
+
+    <!-- ============ DARK FEATURE ============ -->
+    <section class="feature">
+      <div class="feature__bg"><img src="img/hills.jpg" alt=""></div>
+      <div class="container feature__head center">
+        <h2 class="display display--light reveal"><em>Contemplate and fall under its spell:</em><br>Golden Creeper grows with every season</h2>
+      </div>
+      <div class="container split feature__body">
+        <div class="split__text reveal">
+          <blockquote>“In every walk with nature one receives far more than he seeks.”</blockquote>
+          <p>Golden Creeper has always had a gift for renewal. With each season the gardens change their colours, our chefs reinvent their menus and new experiences take root, yet the spirit of the place remains untouched.</p>
+          <p>Lounges open onto the forest, a library glows by firelight and the infinity pool seems to pour straight into the valley. An invitation to dream, every single day.</p>
+        </div>
+        <div class="split__media reveal"><img src="img/coast.jpg" alt=""></div>
+      </div>
+    </section>
+
+    <!-- ============ DINING / SPA / EXPERIENCES ============ -->
+    <section class="section section--white" id="experiences">
+      <div class="container center narrow">
+        <span class="ornament reveal"></span>
+        <h2 class="title reveal">Dream, savour, explore:<br><em>an unforgettable stay</em></h2>
+      </div>
+      <div class="container cards">
+        <article class="card reveal" id="dining">
+          <div class="card__img"><img src="img/dining-1.jpg" alt=""></div>
+          <p class="kicker">Restaurants &amp; Bars</p>
+          <h3>Dining under the canopy</h3>
+          <p>Farm-to-table menus, a riverside grill and cocktails crafted from garden botanicals.</p>
+          <a href="#" class="link">Our restaurants</a>
+        </article>
+        <article class="card reveal" id="spa">
+          <div class="card__img"><img src="img/spa.jpg" alt=""></div>
+          <p class="kicker">Spa &amp; Wellbeing</p>
+          <h3>The Creeper Spa</h3>
+          <p>Ancient rituals, forest-sourced oils and treatment pavilions open to the sound of rain.</p>
+          <a href="#" class="link">Discover the spa</a>
+        </article>
+        <article class="card reveal">
+          <div class="card__img"><img src="img/loungers.jpg" alt=""></div>
+          <p class="kicker">Experiences</p>
+          <h3>Explore the wild</h3>
+          <p>Guided forest walks, sunrise yoga, waterfall picnics and stargazing on the ridge.</p>
+          <a href="#" class="link">All experiences</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section section--ivory" id="gallery">
+      <div class="gallery container">
+        <div class="gallery__intro reveal">
+          <span class="ornament"></span>
+          <h2 class="title">Inspired by you</h2>
+          <p class="handles"><em>@GoldenCreeperResort<br>#GoldenCreeper<br>#GoldenMoments</em></p>
+        </div>
+        <div class="gallery__grid">
+          <figure class="g1 reveal"><img src="img/pool-dusk.jpg" alt=""></figure>
+          <figure class="g2 reveal"><img src="img/dining-2.jpg" alt=""></figure>
+          <figure class="g3 reveal"><img src="img/palms.jpg" alt=""></figure>
+          <figure class="g4 reveal"><img src="img/forest.jpg" alt=""></figure>
+          <figure class="g5 reveal"><img src="img/deck.jpg" alt=""></figure>
+          <figure class="g6 reveal"><img src="img/room-1.jpg" alt=""></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__top">
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="LinkedIn">IN</a>
+      </div>
+      <img class="footer__logo" src="img/logo-knockout.png" alt="Golden Creeper">
+      <address>
+        Golden Creeper Resort<br>
+        [Address line], [City]<br>
+        Tel: +00 000 000 0000<br>
+        <a href="mailto:stay@goldencreeper.com">stay@goldencreeper.com</a>
+      </address>
+    </div>
+    <nav class="footer__nav">
+      <a href="#rooms">Accommodation</a><a href="#dining">Restaurants</a><a href="#spa">Spa &amp; Wellbeing</a><a href="#experiences">Experiences</a><a href="#offers">Special offers</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a href="#">Careers</a>
+    </nav>
+    <p class="footer__legal">&copy; <span id="year"></span> Golden Creeper. All rights reserved. · Legal notice · Privacy</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
