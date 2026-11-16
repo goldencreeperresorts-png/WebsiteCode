@@ -265,6 +265,14 @@ img.pos-right{object-position:78% 50%}
 @media (max-width:560px){
   .rules{grid-template-columns:1fr}
 }
+@media (max-width:900px){
+  .slider__track{overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;transform:none!important;transition:none;gap:12px}
+  .slider__track::-webkit-scrollbar{display:none}
+  .slider__track>*{scroll-snap-align:start}
+  .slider .slide{flex-basis:88%}
+  .rooms__track{gap:16px;scroll-padding-left:clamp(20px,4vw,40px)}
+  .slider__btn,.rooms__nav{display:none}
+}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;transition-delay:0s!important}
 }
