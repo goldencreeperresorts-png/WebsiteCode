@@ -26,10 +26,9 @@ em{font-style:italic}
 .intro__ornament .leaf{fill:var(--gold);transform-box:fill-box;transform-origin:50% 100%;transform:scale(0);animation:leafPop .7s var(--ease) forwards}
 .intro__ornament .leaf--1{animation-delay:2.05s}
 .intro__ornament .leaf--2{animation-delay:2.45s;fill:var(--gold-soft)}
-.intro__skip{position:absolute;bottom:28px;right:32px;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);opacity:0;animation:fadeIn .6s 1.2s forwards}
 .intro.is-leaving{background-color:transparent;pointer-events:none}
 .intro.is-leaving .intro__bg{opacity:0}
-.intro.is-leaving .intro__ornament,.intro.is-leaving .intro__skip{opacity:0!important;transition:opacity .5s}
+.intro.is-leaving .intro__ornament{opacity:0!important;transition:opacity .5s}
 .intro.is-leaving .intro__logo{transition:transform 1.45s cubic-bezier(.65,0,.25,1)}
 .intro.is-leaving .intro__logo-color{opacity:0;transition:opacity 1s ease .25s}
 .intro.is-leaving .intro__logo-outline{opacity:1;transition:opacity 1s ease .25s}
@@ -226,6 +225,9 @@ p{font-size:15px;line-height:1.85;color:var(--muted);font-weight:400}
 .footer__nav{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 32px;margin:50px auto 0;padding:26px 20px;border-top:1px solid rgba(240,196,119,.2);border-bottom:1px solid rgba(240,196,119,.2);max-width:1160px;font-size:11px;letter-spacing:.24em;text-transform:uppercase}
 .footer__nav a:hover{color:var(--gold)}
 .footer__legal{font-size:11.5px;color:rgba(247,244,236,.5);margin:24px 0 0;letter-spacing:.05em}
+.footer__credit{font-size:11px;color:rgba(247,244,236,.4);margin:8px 0 0;letter-spacing:.08em}
+.footer__credit a{color:var(--gold-soft);border-bottom:1px solid rgba(240,196,119,.35);transition:color .3s,border-color .3s}
+.footer__credit a:hover{color:var(--gold);border-color:var(--gold)}
 
 /* house rules */
 .lead{font-size:16px;max-width:640px;margin:0 auto}

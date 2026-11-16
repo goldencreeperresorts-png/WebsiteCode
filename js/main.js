@@ -48,8 +48,6 @@
       document.fonts ? document.fonts.ready : Promise.resolve()
     ]);
     ready.then(leaveIntro);
-    intro.addEventListener('click', leaveIntro);
-    window.addEventListener('keydown', e => { if (e.key === 'Escape' || e.key === 'Enter') leaveIntro(); });
   }
 
   /* ---------- Header state ---------- */
