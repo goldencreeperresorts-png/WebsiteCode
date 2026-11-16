@@ -41,7 +41,7 @@
     finishIntro();
   } else {
     const heroImg = new Image();
-    heroImg.src = document.querySelector('.hero__media img').currentSrc || 'img/hero.jpg';
+    heroImg.src = document.querySelector('.hero__media img').currentSrc || 'img/villa-dusk.jpg';
     const ready = Promise.all([
       new Promise(r => setTimeout(r, INTRO_HOLD)),
       heroImg.decode ? heroImg.decode().catch(() => {}) : Promise.resolve(),
@@ -71,6 +71,25 @@
   /* ---------- Hero card ---------- */
   const card = document.querySelector('.hero__card');
   card.querySelector('.hero__card-close').addEventListener('click', () => card.classList.add('is-closed'));
+
+  /* ---------- Booking enquiry ---------- */
+  const bookForm = document.getElementById('bookForm');
+  const checkin = bookForm.elements.checkin;
+  const checkout = bookForm.elements.checkout;
+  const today = new Date().toISOString().slice(0, 10);
+  checkin.min = today;
+  checkout.min = today;
+  checkin.addEventListener('change', () => {
+    checkout.min = checkin.value || today;
+    if (checkout.value && checkout.value <= checkin.value) checkout.value = '';
+  });
+  const fmt = v => new Date(v + 'T00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+  bookForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const f = bookForm.elements;
+    const text = `Hello Golden Creeper, I'd like to check availability.\nCheck-in: ${fmt(f.checkin.value)}\nCheck-out: ${fmt(f.checkout.value)}\nGuests: ${f.guests.value}\nStay: ${f.stay.value}`;
+    window.open(`https://wa.me/917845917990?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  });
 
   /* ---------- Sliders ---------- */
   document.querySelectorAll('[data-slider]').forEach(slider => {
