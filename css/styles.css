@@ -279,7 +279,7 @@ img.pos-right{object-position:78% 50%}
   .menu__media{display:none}
   .hero__card{display:none}
   .hero__mark{height:clamp(130px,21vh,180px)}
-  .hero__title{font-size:clamp(2.2rem,8.6vw,2.9rem);line-height:1.12;margin-top:1.1em}
+  .hero__title{font-size:clamp(2.2rem,8.6vw,2.9rem);line-height:1.12;margin-top:47px}
   .hero__title .nowrap{white-space:nowrap}
   .header__brand{height:38px}
 }
