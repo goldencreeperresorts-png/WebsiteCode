@@ -301,3 +301,36 @@ img.pos-right{object-position:78% 50%}
 }
 .slider--portrait{max-width:440px;margin:0 auto}
 .slider--portrait .slide img{aspect-ratio:3/4}
+
+/* life at the villa */
+.day{margin-top:clamp(80px,10vw,140px)}
+.day__head .kicker{color:var(--gold-soft)}
+.day__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,2.4vw,36px);margin-top:44px}
+.day__img{overflow:hidden;margin-bottom:22px}
+.day__img img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.2s var(--ease)}
+.day__item:hover .day__img img{transform:scale(1.06)}
+.day__item .kicker{color:var(--gold-soft);margin-bottom:8px}
+.day__item h4{font-family:var(--serif);font-weight:500;font-size:1.5rem;line-height:1.2;color:var(--ivory);margin:0 0 .35em}
+.day__item p:last-child{font-size:14px;line-height:1.75;margin:0}
+.day__item:nth-child(2){transition-delay:.1s}.day__item:nth-child(3){transition-delay:.2s}.day__item:nth-child(4){transition-delay:.3s}
+/* nearby sightseeing */
+.nearby{align-items:start;margin-top:clamp(50px,6vw,80px)}
+.nearby .split__media img{aspect-ratio:4/5;object-fit:cover}
+.nearby__list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(43,77,55,.14)}
+.nearby__list a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 4px;border-bottom:1px solid rgba(43,77,55,.14);transition:background-color .3s,padding .3s}
+.nearby__list a:hover{background:var(--ivory);padding-left:12px;padding-right:12px}
+.nearby__text{display:flex;flex-direction:column;gap:2px}
+.nearby__name{font-family:var(--serif);font-weight:500;font-size:1.3rem;line-height:1.25;color:var(--forest-2)}
+.nearby__note{font-size:13px;line-height:1.5;color:var(--muted)}
+.nearby__km{flex:none;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--gold-deep);white-space:nowrap}
+.nearby__foot{margin:18px 0 0;font-size:12.5px;line-height:1.6}
+@media (max-width:1100px){
+  .day__grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .day__grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:14px;margin-right:calc(-1 * var(--pad,20px));padding-right:20px}
+  .day__grid::-webkit-scrollbar{display:none}
+  .day__item{flex:0 0 78%;scroll-snap-align:start}
+  .nearby .split__media img{aspect-ratio:3/2}
+  .nearby__name{font-size:1.2rem}
+}
