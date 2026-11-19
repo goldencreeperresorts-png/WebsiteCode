@@ -331,6 +331,6 @@ img.pos-right{object-position:78% 50%}
   .day__grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:14px;margin-right:calc(-1 * var(--pad,20px));padding-right:20px}
   .day__grid::-webkit-scrollbar{display:none}
   .day__item{flex:0 0 78%;scroll-snap-align:start}
-  .nearby .split__media img{aspect-ratio:3/2}
+  .nearby .split__media{display:none}
   .nearby__name{font-size:1.2rem}
 }
