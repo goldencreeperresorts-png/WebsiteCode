@@ -12,7 +12,7 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 
   /* ---------- Intro: landing screen -> home ---------- */
-  const INTRO_HOLD = 3700;
+  const INTRO_HOLD = 5400;
   const EXIT_DURATION = 1500;
   let leaving = false;
 
