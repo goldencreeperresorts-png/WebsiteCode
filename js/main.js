@@ -41,7 +41,7 @@
     finishIntro();
   } else {
     const heroImg = new Image();
-    heroImg.src = document.querySelector('.hero__media img').currentSrc || 'img/villa-dusk.jpg';
+    heroImg.src = document.querySelector('.hero__media img').currentSrc || 'img/cover.jpg';
     const ready = Promise.all([
       new Promise(r => setTimeout(r, INTRO_HOLD)),
       heroImg.decode ? heroImg.decode().catch(() => {}) : Promise.resolve(),
