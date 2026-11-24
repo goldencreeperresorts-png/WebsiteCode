@@ -295,7 +295,8 @@ img.pos-right{object-position:78% 50%}
   .menu__inner{grid-template-columns:1fr}
   .menu__media{display:none}
   .hero__card{display:none}
-  .hero__title{font-size:clamp(1.4rem,5.6vw,3.4rem);line-height:1.15}
+  .hero__content{padding-left:6px;padding-right:6px}
+  .hero__title{font-size:clamp(1.55rem,6.05vw,3.4rem);line-height:1.15}
   .hero__title .nowrap{white-space:nowrap}
   .header__brand{height:38px}
 }
