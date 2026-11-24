@@ -117,6 +117,24 @@
     window.addEventListener('resize', () => go(index));
   });
 
+  /* ---------- Reviews: read more ---------- */
+  const reviews = [...document.querySelectorAll('.review')];
+  const measureReviews = () => reviews.forEach(r => {
+    const text = r.querySelector('.review__text');
+    if (text) r.classList.toggle('is-clamped', r.classList.contains('is-open') || text.scrollHeight > text.clientHeight + 1);
+  });
+  measureReviews();
+  if (document.fonts) document.fonts.ready.then(measureReviews);
+  window.addEventListener('resize', measureReviews);
+  reviews.forEach(r => {
+    const btn = r.querySelector('.review__more');
+    btn.addEventListener('click', () => {
+      const open = r.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(open));
+      btn.textContent = open ? 'Read less' : 'Read more';
+    });
+  });
+
   /* ---------- Reveal on scroll ---------- */
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
