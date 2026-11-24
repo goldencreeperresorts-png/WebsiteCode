@@ -26,13 +26,18 @@
   function leaveIntro() {
     if (leaving || !intro) return;
     leaving = true;
+    body.classList.add('is-revealing');
+    intro.classList.add('is-leaving');
+    if (!heroMark.offsetParent) {
+      intro.classList.add('is-fading');
+      setTimeout(finishIntro, EXIT_DURATION);
+      return;
+    }
     const from = introLogo.getBoundingClientRect();
     const to = heroMark.getBoundingClientRect();
     const dx = (to.left + to.width / 2) - (from.left + from.width / 2);
     const dy = (to.top + to.height / 2) - (from.top + from.height / 2);
     const scale = to.height / from.height;
-    body.classList.add('is-revealing');
-    intro.classList.add('is-leaving');
     introLogo.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
     setTimeout(finishIntro, EXIT_DURATION);
   }
